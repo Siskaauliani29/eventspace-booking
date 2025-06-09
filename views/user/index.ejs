@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+<h1>Selamat Datang di EventSpace</h1>
+<p>Temukan tempat terbaik untuk event Anda!</p>
+<%- include('../partials/footer') %>
+
+<h2>Daftar Booking</h2>
+<ul>
+  <% bookings.forEach(b => { %>
+    <li>
+      <strong><%= b.name %></strong> - 
+      <%= b.place %> - 
+      <%= b.date ? new Date(b.date).toLocaleDateString('id-ID', {
+        day: 'numeric', month: 'long', year: 'numeric'
+      }) : 'Tanggal tidak valid' %>
+    </li>
+  <% }) %>
+</ul>
+

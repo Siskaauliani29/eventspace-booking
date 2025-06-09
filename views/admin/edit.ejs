@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/edit-form.css" />
+
+
+<h2>Edit Booking</h2>
+<form method="POST">
+  <label for="name">Nama Pemesan</label>
+  <input id="name" name="name" type="text" value="<%= booking.name %>" required>
+
+  <label for="date">Tanggal</label>
+  <input id="date" name="date" type="date" value="<%= booking.date %>" required>
+
+  <label for="place">Tempat</label>
+  <input id="place" name="place" type="text" value="<%= booking.place %>" required>
+
+  <label for="status">Status</label>
+  <select id="status" name="status" required>
+    <option value="Confirmed" <%= booking.status === 'Confirmed' ? 'selected' : '' %>>Confirmed</option>
+    <option value="Pending" <%= booking.status === 'Pending' ? 'selected' : '' %>>Pending</option>
+  </select>
+
+  <button type="submit">Update</button>
+</form>

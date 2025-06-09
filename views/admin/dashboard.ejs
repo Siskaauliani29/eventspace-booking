@@ -1,0 +1,22 @@
+<head>
+  <title>Dashboard Admin</title>
+  <link rel="stylesheet" href="/css/admin.css" />
+</head>
+<body>
+<h2>Dashboard Admin</h2>
+<a href="/admin/create">+ Tambah Booking</a>
+<table border="1">
+  <tr><th>Nama</th><th>Tanggal</th><th>Tempat</th><th>Status</th><th>Aksi</th></tr>
+  <% bookings.forEach(b => { %>
+    <tr>
+<td data-label="Nama"><%= b.name %></td>
+<td data-label="Tanggal"><%= b.date %></td>
+<td data-label="Tempat"><%= b.place %></td>
+<td data-label="Status"><%= b.status %></td>
+<td data-label="Aksi">
+  <a href="/admin/edit/<%= b._id %>">Edit</a> |
+  <a href="/admin/delete/<%= b._id %>">Hapus</a>
+</td>
+    </tr>
+  <% }) %>
+</table>
