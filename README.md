@@ -64,9 +64,7 @@ git clone https://github.com/username/eventspace.git
 cd eventspace
 Install dependencies
 
-bash
-Salin
-Edit
+
 npm install
 Buat file .env di root project dan isi dengan:
 
@@ -86,5 +84,3 @@ Admin login: http://localhost:3000/admin/login
 
 Catatan
 Pastikan MongoDB sudah berjalan di lokal kamu.
-
-Admin bisa login dengan username dan password sesuai file .env.
