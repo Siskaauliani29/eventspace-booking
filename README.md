@@ -2,6 +2,9 @@
 
 Aplikasi web sederhana untuk booking tempat event, terdiri dari halaman user umum dan dashboard admin dengan fitur CRUD booking.
 
+Link Presentasi
+📽️ [Link Presentasi](https://youtu.be/WtOH4AigSUk)
+
 ---
 
 ## Teknologi yang Digunakan
