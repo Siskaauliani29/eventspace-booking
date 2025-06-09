@@ -66,7 +66,7 @@ Aplikasi web sederhana untuk booking tempat event, terdiri dari halaman user umu
 1. **Clone repository ini**:
 
 ```bash
-git clone https://github.com/username/eventspace.git
+git clone https://github.com/Siskaauliani29/eventspace-booking.git
 cd eventspace
 ````
 
